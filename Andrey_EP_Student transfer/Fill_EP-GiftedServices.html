@@ -58,13 +58,13 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>//form[@id='frmFormDetails']/div/div[2]/div[3]/div[3]/div[2]/div/div/span/span/span/input[1]</td>
-	<td>1</td>
+	<td>//form[@id='frmFormDetails']/div/div[2]/div[3]/div[3]/div[2]/div/div/span/span/span/input[@data-bind='value: NumberOfGiftedContactHours']</td>
+	<td>3</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>//form[@id='frmFormDetails']/div/div[2]/div[3]/div[3]/div[2]/div/div/span/span/span/input[@data-bind='value: NumberOfGiftedContactHours']</td>
-	<td>3</td>
+	<td>//form[@id='frmFormDetails']/div/div[2]/div[3]/div[3]/div[2]/div/div/span/span/span/input[1]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -78,17 +78,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=btnValidateForm</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>//body/div[16]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//body/div[16]/div[@id='pnlMessageBoxConfirm']//a[@ id='btnMessageBoxConfirmSave']</td>
+	<td>id=btnUpdateForm</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,9 +87,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertAlert</td>
-	<td>Form validated successfully.</td>
+	<td>waitForElementPresent</td>
+	<td>//form[@id='frmFormDetails']/div/div[2]/div[3]/div[4]</td>
 	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=pnlFormConfirm</td>
+	<td>Form has been updated successfully.</td>
 </tr>
 </tbody></table>
 </body>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dade.acceliqc.com" />
+<title>FillDiplomaPathways</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FillDiplomaPathways</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='pnlEventMenu']/tbody/tr[17]/td[2]/span/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value SelectStudentsGraduationPlan']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value SelectStudentsGraduationPlan']/span[@class='k-widget k-dropdown k-header']@aria-owns</td>
+	<td>varStudentPlan</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=${varStudentPlan}]/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//span[@class='js-form-field-value DescribeStudentsCourseOfStudy']/textarea</td>
+	<td>aaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@field-key='IsStudentPursuingDiplomaDesignation']//../span[text()='Yes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value MeritDesignation']/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value ScholarDesignation']/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value ExpectedGraduationYear']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='k-widget k-calendar']/div[@class='k-footer']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value ThreeASelectDiplomaOptionStudentIsPursuing']/div[3]/label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value ParentAdultStudentApprovedChangesDiploma']/div[1]/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@field-key='ComtactNameDiplomaPathwaya']</td>
+	<td>bbbb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@field-key='ComtactPhoneDiplomaPathwaya']</td>
+	<td>1234567</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//span[@class='js-form-field-value WasChangeMadeToStudentsGraduationOption']/textarea</td>
+	<td>cccc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value IsThisStudentDeferringReceiptStandard']/div[3]/label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

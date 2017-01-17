@@ -22,6 +22,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[text()='Loading, please wait ...']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//a[text()='IEP Initial Meeting']</td>
 	<td></td>
@@ -38,12 +43,12 @@
 </tr>
 <tr>
 	<td>storeAttribute</td>
-	<td>//span[@class='js-form-field-value StudentTeamLookUp']//span[@class='k-widget k-dropdown k-header']@aria-owns</td>
+	<td>//span[@class='js-form-field-value StudentTeamLookUp']//span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
 	<td>varStudent</td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>varStudent</td>
+	<td>${varStudent}</td>
 	<td></td>
 </tr>
 <tr>

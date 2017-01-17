@@ -13,8 +13,13 @@
 </thead><tbody>
 <tr>
 	<td>clickAndWait</td>
-	<td>//table[@id='pnlEventMenu']/tbody/tr[17]/td[2]/span/a/span</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Diploma Pathways']</td>
 	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value SelectStudentsGraduationPlan']/span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varStudentPlan</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -22,13 +27,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>storeAttribute</td>
-	<td>//span[@class='js-form-field-value SelectStudentsGraduationPlan']/span[@class='k-widget k-dropdown k-header']@aria-owns</td>
-	<td>varStudentPlan</td>
+	<td>echo</td>
+	<td>${varStudentPlan}</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//ul[@id=${varStudentPlan}]/li[2]</td>
+	<td>//ul[@id='${varStudentPlan}']/li[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -96,7 +101,6 @@
 	<td>id=btnUpdateForm</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

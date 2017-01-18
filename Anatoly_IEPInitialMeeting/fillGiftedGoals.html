@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dade.acceliqc.com" />
+<title>fillGiftedGoals</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">fillGiftedGoals</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Gifted Goals and Benchmarks']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@class='border-section mT20 gifted-goal']//textarea[contains(@id,'GiftedGoals') and contains(@id, 'Name')]</td>
+	<td>aaaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@class='border-section mT20 gifted-goal']//textarea[contains(@id,'GiftedGoals') and contains(@id, 'IndividualGoal_PrimaryBenchmark')]</td>
+	<td>bbbb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@class='border-section mT20 gifted-goal']//textarea[contains(@id,'GiftedGoals') and contains(@id, 'IndividualGoal_SecondaryBenchmark')]</td>
+	<td>cccc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(text(),'Evaluation Procedures')]/div/div/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[contains(text(),'Evaluation Criteria')]//span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[text()='Annually']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='k-widget k-dropdown k-header program-goal-type w-full']@aria-owns</td>
+	<td>varProgram</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='k-widget k-dropdown k-header program-goal-type w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varProgram}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form0']/div[2]/div[3]/div[3]/div/span/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__ProgramGoal_PrimaryBenchmarkId_listbox']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form0']/div[2]/div[3]/div[4]/div/span/span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__ProgramGoal_SecondaryBenchmarkId_listbox']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__GoalEvaluationProcedure_IsGradedWorkSamples</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='sizzle-1484762563948']/div/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__EvaluationCriteriaId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form0']/div[2]/div[3]/div[5]/div[2]/div/div/div/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__EvaluationScheduleId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='form0']/div[2]/div[3]/div[5]/div[2]/div[2]/div/div/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

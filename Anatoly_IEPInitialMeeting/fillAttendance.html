@@ -58,6 +58,66 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>//span[@class='js-form-field-value LEARepresentativeTeamLoookup']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value LEARepresentativeTeamLoookup']//span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varLEA</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varLEA}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varLEA}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value SpecialEducationTeacherTeamLookUp']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value SpecialEducationTeacherTeamLookUp']//span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varSpecial</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varSpecial}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varSpecial}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value GeneralEducationTeacherTeamLookUp']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value GeneralEducationTeacherTeamLookUp']//span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varGeneral</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varGeneral}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varGeneral}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>id=btnUpdateForm</td>
 	<td></td>
 </tr>

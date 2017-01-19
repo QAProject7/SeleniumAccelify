@@ -17,6 +17,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementNotPresent</td>
+	<td>//div[text()='Loading, please wait ...']</td>
+	<td></td>
+</tr>
+<tr>
 	<td>type</td>
 	<td>//div[@class='border-section mT20 gifted-goal']//textarea[contains(@id,'GiftedGoals') and contains(@id, 'Name')]</td>
 	<td>aaaa</td>
@@ -52,6 +57,11 @@
 	<td>varProgram</td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>${varProgram}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>//span[@class='k-widget k-dropdown k-header program-goal-type w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
@@ -62,53 +72,48 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='k-widget k-dropdown k-header primary-benchmark w-full']@aria-owns</td>
+	<td>varBenchmark1</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>//form[@id='form0']/div[2]/div[3]/div[3]/div/span/span/span</td>
+	<td>//span[@class='k-widget k-dropdown k-header primary-benchmark w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//ul[@id='GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__ProgramGoal_PrimaryBenchmarkId_listbox']/li</td>
+	<td>//ul[@id='${varBenchmark1}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='k-widget k-dropdown k-header secondary-benchmark w-full']@aria-owns</td>
+	<td>varBenchmark2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='k-widget k-dropdown k-header secondary-benchmark w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//form[@id='form0']/div[2]/div[3]/div[4]/div/span/span/span</td>
+	<td>//ul[@id='${varBenchmark2}']/li[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//ul[@id='GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__ProgramGoal_SecondaryBenchmarkId_listbox']/li</td>
+	<td>//div[contains(text(),'Program Goal')]/..//div[starts-with(@class,'pT10 evaluation-procedures')]//label</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__GoalEvaluationProcedure_IsGradedWorkSamples</td>
+	<td>//div[contains(text(),'Program Goal')]/..//input[contains(@id,'EvaluationCriteriaId')]/../span</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[@id='sizzle-1484762563948']/div/label</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__EvaluationCriteriaId</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='form0']/div[2]/div[3]/div[5]/div[2]/div/div/div/label/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=GiftedGoals_9b440e5e-c1dc-47d0-8e34-e27c9fb122f4__EvaluationScheduleId</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//form[@id='form0']/div[2]/div[3]/div[5]/div[2]/div[2]/div/div/label/span</td>
+	<td>//div[contains(text(),'Program Goal')]/..//input[contains(@id,'EvaluationScheduleId')]/../span</td>
 	<td></td>
 </tr>
 <tr>
@@ -116,12 +121,6 @@
 	<td>id=btnUpdate</td>
 	<td></td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>id=btnUpdateForm</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>

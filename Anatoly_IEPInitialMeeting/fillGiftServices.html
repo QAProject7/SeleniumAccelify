@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dade.acceliqc.com" />
+<title>fillGiftServices</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">fillGiftServices</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Gifted Services']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value DeliveryModelLookup']/span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varModel</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value DeliveryModelLookup']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varModel}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varModel}']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//span[@class='js-form-field-value NumberOfGiftedContactHours']//input[@type='text']</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//span[@class='js-form-field-value NumberOfGiftedContactHours']//input[@field-key='NumberOfGiftedContactHours']</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value LocationGiftedServices']//span[text()='select']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value LocationGiftedServices']/span[starts-with(@class,'k-widget k-dropdown k-header')]@aria-owns</td>
+	<td>varLocation</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varLocation}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='${varLocation}']/li[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value ParentWaivesGiftedServices']/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

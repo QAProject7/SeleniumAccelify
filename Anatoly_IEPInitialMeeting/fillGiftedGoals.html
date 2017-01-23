@@ -43,7 +43,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[contains(text(),'Evaluation Criteria')]//span</td>
+	<td>//div[contains(text(),'Evaluation Criteria')]//input</td>
 	<td></td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[@class='k-widget k-dropdown k-header program-goal-type w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
+	<td>//span[@class='k-widget k-dropdown k-header program-goal-type w-full']/span/span/span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -73,12 +73,12 @@
 </tr>
 <tr>
 	<td>storeAttribute</td>
-	<td>//span[@class='k-widget k-dropdown k-header primary-benchmark w-full']@aria-owns</td>
+	<td>//span[contains(@class,'primary-benchmark w-full')]@aria-owns</td>
 	<td>varBenchmark1</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[@class='k-widget k-dropdown k-header primary-benchmark w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
+	<td>//span[contains(@class,'primary-benchmark w-full')]/span/span/span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
 </tr>
 <tr>
@@ -88,12 +88,12 @@
 </tr>
 <tr>
 	<td>storeAttribute</td>
-	<td>//span[@class='k-widget k-dropdown k-header secondary-benchmark w-full']@aria-owns</td>
+	<td>//span[contains(@class,'secondary-benchmark w-full')]@aria-owns</td>
 	<td>varBenchmark2</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//span[@class='k-widget k-dropdown k-header secondary-benchmark w-full']//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
+	<td>//span[contains(@class,'secondary-benchmark w-full')]//span[starts-with(@class, 'k-icon k-i-arrow-s')]</td>
 	<td></td>
 </tr>
 <tr>

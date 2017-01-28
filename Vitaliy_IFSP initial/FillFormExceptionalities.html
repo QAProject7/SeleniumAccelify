@@ -4,16 +4,16 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://dade.acceliqc.com/" />
-<title>GoIntoEvent</title>
+<title>FillFormExceptionalities</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">GoIntoEvent</td></tr>
+<tr><td rowspan="1" colspan="3">FillFormExceptionalities</td></tr>
 </thead><tbody>
 <tr>
 	<td>click</td>
-	<td>//div[@id='pnlEventList']//a[contains(text(),'IFSP Initial Meeting')]</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Exceptionalities']</td>
 	<td></td>
 </tr>
 <tr>
@@ -21,6 +21,22 @@
 	<td>15000</td>
 	<td></td>
 </tr>
+<tr>
+	<td>click</td>
+	<td>id=btnCreateDisability</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmCreateDisability']//span[@class='k-input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='DisabilityTypeId_listbox']/descendant::li[1]</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
